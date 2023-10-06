@@ -7,11 +7,52 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>This is a survey to win a boat!</h1>
-<form> 
-<label for="fname">
-    <input id="fname" type="text">
+    <h1 id="title">Carribean Cruise</h1>
+    <p id="description">Enter your information below to win a free cruise!</p>
+<form id="survey-form"> 
+<label for="name" id="name-label">First name:
+    <input id="name" type="text" class="label" placeholder="Enter first name" required>
 </label>
- </form>
+    <label for="name" id="name-label">Last name:
+        <input id="name" type="text" class="label" placeholder="Enter last name" required>
+    </label>
+        <label for="email" id="email-label">Email address:
+            <input id="email" type="email" class="label" placeholder="Enter email address" required>
+        </label>
+        <label for="number" id="number-label">Age:
+            <input id="number" type="number" class="label" placeholder="Enter age" min="18" max="100" required>
+        </label>
+        <label for="drop"> How did you hear about us?
+      <select name="drop" id="dropdown">
+        <option value="">(select one)</option>
+        <option value="1">Fackebook</option>
+        <option value="2">Instagram</option>
+        <option value="3">Relatives or friends</option>
+    </select>
+    </label>
+    <br>
+    <label for="family-getaway">
+    <input id="family-getaway" type="radio" name="family-getaway" class="inline">Family vacation
+</label>
+<label for="personal-getaway">
+    <input id="personal-getaway" type="radio" name="personal-getaway" class="inline">Personal vacation
+</label>
+<br>
+<label for="terms-and-conditions">
+    <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> I accept the <a href="https://www.americancruiselines.com/general-information/terms-and-conditions#:~:text=You%20warrant%20that%20you%20and,and%20directions%20of%20the%20Vessel's">terms and conditions</a>
+  </label>
+  <br>
+  <label for="18">
+    <input id="18" type="checkbox" value="18" required name="" class="inline" /> I am 18 years or older
+  </label>
+  <br>
+  <label for="explain">How or why would a cruise benefit you?
+    <textarea id="explain" val name="explain" rows="3" cols="30" placeholder="A cruise would benefit me..."></textarea>
+  </label>
+  <label for="submit">
+   <input type="submit" id="submit" value="submit"/>
+</label>
+</form>
 </body>
+
 </html>

@@ -1,3 +1,48 @@
 body{
-    background-color: aqua;
+  
+    background: linear-gradient( 
+        to top,
+        rgb(2, 181, 235) 20%,
+        rgb(0, 255, 251) 30%,
+        rgba(234, 216, 20, 0.989) 50%,
+        rgb(0, 191, 255) 100%);
 }
+#title{
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#description{
+    color: aliceblue;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ color: aliceblue;
+}
+input[type="submit"] {
+    display: block;
+    width: 40%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #ded314;
+   
+    min-width: 300px;
+  }
+ 
+ 
